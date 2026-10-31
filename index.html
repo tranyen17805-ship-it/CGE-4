@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CGE 4 Study – Học tiếng Anh mỗi ngày</title>
+<style>
+:root{--bg:#fff8f0;--card:#fff;--ink:#2b2a3a;--mut:#6d6a80;--ln:#eadfce;--sh:0 6px 18px rgba(80,60,30,.10)}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1b26;--card:#272636;--ink:#f2efe9;--mut:#a9a5bd;--ln:#3a3850;--sh:0 6px 18px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;min-height:100vh;padding:env(safe-area-inset-top,0) 16px env(safe-area-inset-bottom,0)}
+.wrap{max-width:860px;margin:0 auto;padding:28px 0 40px}
+.hero{text-align:center;margin-bottom:26px}
+.hero .em{font-size:64px;line-height:1}
+h1{margin:10px 0 6px;font-size:clamp(26px,5vw,38px)}
+.hero p{margin:0;color:var(--mut);font-size:17px}
+.stat{display:inline-block;margin-top:12px;padding:6px 14px;border-radius:999px;background:var(--card);border:1px solid var(--ln);font-weight:700}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+a.card{display:block;text-decoration:none;color:#2b2a3a;background:var(--u);border-radius:22px;padding:22px 20px;box-shadow:var(--sh);border:2px solid transparent;transition:transform .15s,border-color .15s}
+a.card:hover,a.card:focus-visible{transform:translateY(-4px);border-color:#2b2a3a;outline:none}
+a.card .e{font-size:52px;display:block}
+a.card .n{font-size:12px;font-weight:800;letter-spacing:.12em;opacity:.65;margin-top:8px}
+a.card h2{margin:4px 0 6px;font-size:24px}
+a.card p{margin:0;font-size:15px;line-height:1.5}
+a.card .go{display:inline-block;margin-top:14px;font-weight:800}
+.foot{text-align:center;margin-top:30px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="em">🎒</div>
+    <h1>CGE 4 Study</h1>
+    <p>Học tiếng Anh mỗi ngày · Global English 4</p>
+    <div class="stat" id="xp" hidden></div>
+  </header>
+  <main class="grid">
+    <a class="card" href="unit.html" style="--u:#ffe3d3">
+      <span class="e">📘</span><div class="n">UNIT</div>
+      <h2>Unit</h2>
+      <p>9 Unit Global English 4: Learner Book, Workbook và kiểm tra cuối Unit.</p>
+      <span class="go">Vào học →</span>
+    </a>
+    <a class="card" href="week.html" style="--u:#d9f0e3">
+      <span class="e">🎯</span><div class="n">TUẦN</div>
+      <h2>Bài tập theo tuần</h2>
+      <p>Nội dung từng tuần: Class letter, Quiz, Weekly check và Extra practice.</p>
+      <span class="go">Vào học →</span>
+    </a>
+    <a class="card" href="reading.html" style="--u:#e4defa">
+      <span class="e">📚</span><div class="n">READING</div>
+      <h2>Reading Lab</h2>
+      <p>Đầu sách, flashcard từ khó, quiz và bài hiểu bài đọc.</p>
+      <span class="go">Vào học →</span>
+    </a>
+  </main>
+  <p class="foot">Chọn một mục để bắt đầu. Trong mỗi mục có thể quay lại đây bằng tab 🏠 Trang chủ.</p>
+</div>
+<script>
+try{var x=localStorage.getItem('cge4x');if(x&&+x>0){var e=document.getElementById('xp');e.textContent='⭐ '+(+x)+' sao';e.hidden=false}}catch(err){}
+</script>
+</body>
+</html>
